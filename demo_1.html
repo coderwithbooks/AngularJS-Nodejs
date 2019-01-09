@@ -1,0 +1,40 @@
+<!Doctype html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<title>"第一个网页"</title>
+	<script type="text/javascript" src="angular-1.7.5/angular.js"></script>
+</head>
+<body>
+	<header>
+		<h1>关于生活</h1>
+	</header>
+	<h2>假如生活欺骗了你</h2>
+	<hr>
+	<p  contenteditable="false" draggable="true" title="by pxj">假如生活欺骗了你</p> 
+	<hr>
+	<form name='Get More' method='POST' action='/solve.js'>
+		<p>诗人:<input type='password' name='Password'>
+		<p>Email:<input type='email'>
+		<p>Personal website:<input type="url"> <!-需填写传输协议>
+		<p>dianji
+			<button type='submit' style="width:120px; height:30px;">
+			试试
+			</button>
+		</p>
+	</form>
+
+	<div id="Info" style="width:200px; height:100px; border:solid red; text-align:center">
+		fdsf
+	</div>
+	<div>
+		用户名：<input type="text" ng-model="uname">
+	</div>
+	<div><p style="color:brown">上面想的是：{{uname}}</div>
+	<nav>
+		<li><a href="index.html">更多</a></li>
+	</nav>
+	<footer><p>普希金</p></footer>
+
+</body>
+</html>
