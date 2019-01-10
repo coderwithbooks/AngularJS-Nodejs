@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf8">
+    <title>MVC PriceCal</title>
+    <script type="text/javascript" src="./angular-1.7.5/angular.js"></script>
+    <script type="text/javascript" src="./js_MVC_PriceCal.js"></script>
+</head>
+<body ng-controller="CalcController">
+    <h3>价格自动计算器</h3>
+    <div>单价：<input type="number" ng-model="price" /> </div>
+    <div>数量：<input type="number" ng-model="num" /></div>
+    <div>总价：{{totalPrice()}}元</div>
+</body>
+</html>
