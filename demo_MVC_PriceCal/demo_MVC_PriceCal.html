@@ -3,13 +3,18 @@
 <head>
     <meta charset="utf8">
     <title>MVC PriceCal</title>
+    <script type="text/javascript" src="./jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./bootstrap-3.4.0-dist/css/bootstrap.css" />
     <script type="text/javascript" src="./angular-1.7.5/angular.js"></script>
     <script type="text/javascript" src="./js_MVC_PriceCal.js"></script>
 </head>
-<body ng-controller="CalcController" style="border:rgb(223, 35, 82) solid 1px ;width:240px">
-    <h3>价格自动计算器</h3>
-    <div>单价：<input type="number" ng-model="price" /> </div>
-    <div>数量：<input type="number" ng-model="num" /></div>
-    <div>总价：{{totalPrice()}}元</div>
+<body ng-controller="CalcController" style="border:rgb(223, 35, 82) solid 10px">
+    <div class="form-group">
+        <h3 class="login-title text-center">价格自动计算器</h3>
+        <div>单价：<input type="number" ng-model="price" class="form-control" /> </div>
+        <div>数量：<input type="number" ng-model="num" class="form-control" /></div>
+        <div>总价：{{totalPrice()}}元</div>
+        <div><input type="button" value="praise" class="btn-warning"></div>
+    </div>
 </body>
 </html>
