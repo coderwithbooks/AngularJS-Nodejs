@@ -24,13 +24,10 @@
 		</p>
 	</form>
 
-	<div id="Info" style="width:200px; height:100px; border:solid red; text-align:center">
-		fdsf
+	<div ng-init="uname='hello'"> <!- 作用域到视图>
+		默念：<input type="text" ng-model="uname"> <!- 视图到作用域>
 	</div>
-	<div>
-		用户名：<input type="text" ng-model="uname">
-	</div>
-	<div><p style="color:brown">上面想的是：{{uname}}</div>
+	<div>上面想的是：<p contenteditable="" style="color:brown" ng-bind="uname"></div>
 	<nav>
 		<li><a href="index.html">更多</a></li>
 	</nav>
