@@ -5,5 +5,5 @@ function CalcController($scope){
         return $scope.price * $scope.num;
     }
 }
-var app = angular.module("app",[]);
+var app = angular.module("app",[]); //第一个参数是前面定义的ng-app的名字
 app.controller("CalcController",CalcController);
